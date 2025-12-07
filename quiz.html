@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="Js/scriptquiz.js" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="css/VS_logo.png">
+    
+</head>
+<body class="quizhatter">
+    <header>
+            <img class="logo" src="css/VS_logo.png" alt="Victoria's Secret logó">
+            <nav>
+                <a class="nlink" href="index.html">Kezdőlap</a>
+                <a class="nlink" href="brand.html">Története</a>
+                <a class="nlink" href="modellek/modellek.html">Modellek</a>
+                <a class="nlink" href="quiz.html">Quiz</a>
+                <a class="nlink" href="nyeremenyjatek.html">Nyereményjáték</a>
+            </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h2>Mennyire ismered az "angyalok" világát?</h2>
+                <form id="jatekForm">
+                    <div class="blokk2">
+                        <label>1. Mikor alapították a Victoria’s Secret márkát?</label><br>
+                        <input type="radio" id="68" name="q1" value="68">
+                        <label for="68" class="option">1968</label>
+                        <input type="radio" id="77" name="q1" value="77">
+                        <label for="77" class="option">1977</label>
+                        <input type="radio" id="89" name="q1" value="89">
+                        <label for="89" class="option">1989</label>
+                        <input type="radio" id="01" name="q1" value="01">
+                        <label for="01" class="option">2001</label>
+                    </div>
+                    <div class="blokk2">
+                        <label>2. Ki alapította a Victoria’s Secretet?</label><br>
+                        <input type="radio" id="les" name="q2" value="les">
+                        <label for="les" class="option">Les Wexner</label>
+                        <input type="radio" id="roy" name="q2" value="roy">
+                        <label for="roy" class="option">Roy Raymond</label>
+                        <input type="radio" id="karl" name="q2" value="karl">
+                        <label for="karl" class="option">Karl Lagerfeld</label>
+                        <input type="radio" id="calvin" name="q2" value="calvin">
+                        <label for="calvin" class="option">Calvin Klein</label>
+                    </div>
+                    <div class="blokk2">
+                        <label>3. Melyik termékkategória tette híressé a Victoria’s Secretet?</label><br>
+                        <input type="radio" id="glases" name="q3" value="glases">
+                        <label for="glases" class="option">Napszemüvegek</label>
+                        <input type="radio" id="sport" name="q3" value="sport">
+                        <label for="sport" class="option">Sportcipők</label>
+                        <input type="radio" id="feher" name="q3" value="feher">
+                        <label for="feher" class="option">Fehérnemű</label>
+                        <input type="radio" id="ekszer" name="q3" value="ekszer">
+                        <label for="ekszer" class="option">Ékszerek</label>
+                    </div>
+                    <div class="blokk2">
+                        <label>4. Hogy hívják a Victoria’s Secret híres kifutómodelljeit?</label><br>
+                        <input type="radio" id="wings" name="q4" value="wings">
+                        <label for="wings" class="option">Wings</label>
+                        <input type="radio" id="stars" name="q4" value="stars">
+                        <label for="stars" class="option">Stars</label>
+                        <input type="radio" id="angels" name="q4" value="angels">
+                        <label for="angels" class="option">Angels</label>
+                        <input type="radio" id="queens" name="q4" value="queens">
+                        <label for="queens" class="option">Queens</label>
+                    </div>
+                    <div class="blokk2">
+                        <label>5. Melyik évben tartották az első Victoria’s Secret Fashion Show-t?</label><br>
+                        <input type="radio" id="95" name="q5" value="95">
+                        <label for="95" class="option">1995</label>
+                        <input type="radio" id="00" name="q5" value="00">
+                        <label for="00" class="option">2000</label>
+                        <input type="radio" id="06" name="q5" value="06">
+                        <label for="06" class="option">2006</label>
+                        <input type="radio" id="10" name="q5" value="10">
+                        <label for="10" class="option">2010</label>
+                    </div>
+                    <div class="blokk2">
+                        <label>6. Mit jelképeznek az „Angel wings”-ek a VS modellek számára?</label><br>
+                        <input type="radio" id="sportos" name="q6" value="sportos">
+                        <label for="sportos" class="option">A márka sportkollekcióját</label>
+                        <input type="radio" id="elit" name="q6" value="elit">
+                        <label for="elit" class="option">A kifutóra lépő elit modellcsoportot</label>
+                        <input type="radio" id="limitalt" name="q6" value="limitalt">
+                        <label for="limitalt" class="option">A limitált kiadású termékeket</label>
+                        <input type="radio" id="kreativ" name="q6" value="kreativ">
+                        <label for="kreativ" class="option">A márka karitatív programját</label>
+                    </div>
+                    <div class="blokk2">
+                        <label>7. Melyik modell búcsúzott el a kifutótól 2018-ban?</label><br>
+                        <input type="radio" id="Gigi" name="q7" value="Gigi">
+                        <label for="Gigi" class="option">Gigi Hadid</label>
+                        <input type="radio" id="Adriana" name="q7" value="Adriana">
+                        <label for="Adriana" class="option">Adriana Lima</label>
+                        <input type="radio" id="Barbi" name="q7" value="Barbi">
+                        <label for="Barbi" class="option">Barbara Palvin</label>
+                        <input type="radio" id="Miranda" name="q7" value="Miranda">
+                        <label for="Miranda" class="option">Miranda Kerr</label>
+                    </div>
+                    <div class="blokk2">
+                        <label>8. Ki volt az első magyar Victoria’s Secret Angel?</label><br>
+                        <input type="radio" id="Grace" name="q8" value="sport">
+                        <label for="Grace" class="option">Grace Elizabeth</label>
+                        <input type="radio" id="Stella" name="q8" value="Stella">
+                        <label for="Stella" class="option">Stella Maxwell</label>
+                        <input type="radio" id="Emily" name="q8" value="Emily">
+                        <label for="Emily" class="option">Emily Ratajkowski</label>
+                        <input type="radio" id="Barbara" name="q8" value="Barbara">
+                        <label for="Barbara" class="option">Barbara Palvin</label>
+                    </div>
+                    <div class="blokk2">
+                        <label>9. Melyik évben szüneteltették a Victoria’s Secret Fashion Show-t a legutóbb?</label><br>
+                        <input type="radio" id="16" name="q9" value="16">
+                        <label for="16" class="option">2016</label>
+                        <input type="radio" id="18" name="q9" value="18">
+                        <label for="18" class="option">2018</label>
+                        <input type="radio" id="19" name="q9" value="19">
+                        <label for="19" class="option">2019</label>
+                        <input type="radio" id="20" name="q9" value="20">
+                        <label for="20" class="option">2020</label>
+                    </div>
+                    <div class="blokk2">
+                        <label>10. Ki lépett fel a show-n 2014-ben?</label><br>
+                        <input type="radio" id="Lady" name="q10" value="Lady">
+                        <label for="Lady" class="option">Lady Gaga</label>
+                        <input type="radio" id="Grande" name="q10" value="Grande">
+                        <label for="Grande" class="option">Ariana Grande</label>
+                        <input type="radio" id="Dua" name="q10" value="Dua">
+                        <label for="Dua" class="option">Dua Lipa</label>
+                        <input type="radio" id="Rihanna" name="q10" value="Rihanna">
+                        <label for="Rihanna" class="option">Rihanna</label>
+                    </div>
+                    <div>
+                        <button type="button" onclick="finishQuiz()">Quiz kiértékelése</button>
+                    </div>
+                </form>
+            </div>
+            <h3 id="resultText"></h3>
+        </section>
+    </main>
+    <footer>
+        <a class="nlink" href="https://www.victoriassecret.com/us/">Victoria Secret hivatalos Webshop</a>
+    </footer>
+</body>
+</html>

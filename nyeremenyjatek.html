@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyereményjáték</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="Js/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="css/VS_logo.png">
+</head>
+
+<body class="quizhatter">
+    <header>
+        <img class="logo" src="css/VS_logo.png" alt="Victoria's Secret logó">
+        <nav>
+            <a class="nlink" href="index.html">Kezdőlap</a>
+            <a class="nlink" href="brand.html">Története</a>
+            <a class="nlink" href="modellek/modellek.html">Modellek</a>
+            <a class="nlink" href="quiz.html">Quiz</a>
+            <a class="nlink" href="nyeremenyjatek.html">Nyereményjáték</a>
+        </nav>
+    </header>
+    <main>
+        <div class="kozep_ig">
+            <h2>Nyerj ingyen jegyet a következő Victoria's Secret Fashion Show-ra!</h2>
+            <p>Szeretnél ott lenni az év legfényűzőbb divateseményén? Most itt a lehetőség!</p>
+            <p>Vegyél részt játékunkban, és nyerd meg a páros exkluzív belépőjegyeket a következő Victoria's Secret Fashion
+                Show-ra, ahol első sorból élvezhetitek a csillogást, a sztárokat és a legújabb kreációkat!</p>
+            <p>Mit kell tenned?<p>
+            <ol>
+                <li>Töltsd ki a rövid kvízünket, és tudd meg, mennyire vagy otthon a divat világában!</li>
+                <li>Add meg adataidat az alábbi űrlapon, hogy részt vehess a sorsoláson.</li>
+            </ol>
+            <h2>Sok Szerencsét kívánunk!</h2>
+            <hr>
+
+            <form id="nyeremenyForm" action="https://httpbin.org/post" method="POST">
+                <div>
+                    <label for="nev">Teljes név:</label>
+                    <input type="text" id="nev" name="nev" placeholder="Szabó Eszter">
+                    <div class="error-msg" id="error-nev"></div>
+                </div>
+                <div>
+                    <label for="telefon">Telefonszám (opcionális):</label>
+                    <input type="tel" id="telefon" name="telefon" placeholder="+36301234567" pattern="[+0-9]{9,15}">
+                    <div class="error-msg" id="error-tel"></div>
+                </div>
+                <div>
+                    <label for="datum">Születési dátum:</label>
+                    <input type="date" id="datum" name="szuletesi_datum">
+                    <div class="error-msg" id="error-datum"></div>
+                </div>
+                <div>
+                    <label for="email">Email cím:</label>
+                    <input type="email" id="email" name="email" placeholder="neved@email.com">
+                    <div class="error-msg" id="error-email"></div>
+                </div>
+                <div>
+                    <label for="modell">Kedvenc modell:</label>
+                    <select  id="modell" name="modell">
+                        <option value="">-válassz-</option>
+                        <option value="Barbi">Barbara Palvin</option>
+                        <option value="Adriana">Adriana Lima</option>
+                        <option value="Gigi">Gigi Hadid</option>
+                        <option value="Bella">Bella Hadid</option>
+                        <option value="Candice">Candice Swanepoel</option>
+                        <option value="Adut">Adut Akech</option>
+                        <option value="Stella">Stella Maxwell</option>
+                    </select>
+                    <div id="error-modell" class="error-msg"></div>
+                </div>
+                <div>
+                    <label for="pontszam">Quizen elért pontszám:</label>
+                    <input type="range" id="pontszam" name="elert_pontszam" min="-1" max="10" step="1" value="-1" oninput="pontszamKijelzes.value = this.value">
+                    <output id="pontszamKijelzes">-1</output>
+                    <div id="error-pontszam" class="error-msg"></div>
+                </div>
+                <div>
+                    <label for="okok">Miért szeretné megnyerni az ingyen jegyeket?</label>
+                    <input type="text" id="okok" name="okok" rows="4">
+                    <div class="error-msg" id="error-okok"></div>
+                </div>
+                <div>
+                    <label for="kivel">Kivel szeretnéd megosztani ezt az élményt? (barátokkal, családtagokkal, stb.)</label>
+                    <input type="text" id="kivel" name="kivel">
+                    <div class="error-msg" id="error-kivel"></div>
+                </div>
+                <div>
+                    <label for="robot">Nem vagyok robot:</label>
+                    <input type="checkbox" id="robot" name="robot">
+                    <div class="error-msg" id="error-robot"></div>
+                </div>
+                <button class="button" type="submit">Nyereményjátékra való jelentkezés beküldése</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <a class="nlink" href="https://www.victoriassecret.com/us/">Victoria Secret hivatalos Webshop</a>
+    </footer>
+
+</body>
+
+</html>
