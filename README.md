@@ -4,7 +4,7 @@ Készítő neve:
 Tisza Veronika
 
 A működő weboldal URL címe:
-
+https://veronikatisza.github.io/webfejlesztes/
 
 A weboldal témájának rövid leírása:
 A weboldalam a Victoria’s Secret történetét és modelljeit mutatja be, valamint egy kvízzel és egy nyereményjátékkal teszi interaktívabbá az élményt.
